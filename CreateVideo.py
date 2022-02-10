@@ -28,15 +28,15 @@ size = (width,height)
 
 out = cv2.VideoWriter('project.mp4',cv2.VideoWriter_fourcc(*'DIVX'), 5, size)
 
-#For SUNSET
+# Para Atardecer
 #for i in range(0,count-1):
 
-#For SUNRISE
+# Para Amanecer
 for i in range(count-1,0,-1):
     frame = cv2.imread(images[i])
     out.write(frame)
     
-out.release() # releasing the video generated
-print("Done")
+out.release() # Liberando el video generado
+print("Listo")
 
 
